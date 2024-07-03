@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,800);
+
+* {
+  margin: auto;
+  padding: 0;
+}
+body {
+  background: #FFF8F0;
+  color: #fff;
+  font-family: 'Open Sans'
+}
+.pg-title {
+  width: 100%;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+span {
+  font-size: 1.5em;
+}
+
+#slider-wrapper {
+    background: #2C423F;
+    display: block;
+    width: 400px;
+    min-height: 100px;
+    margin: auto;
+    position: relative;
+}
+#slider {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+#slider>ul {
+    list-style: none;
+    height: 100%;
+    width: 500%;
+    overflow: hidden;
+    position: relative;
+    left: 0px;
+    -webkit-transition: left .5s;
+    -moz-transition: left .5s;
+    -o-transition: left .5s;
+    transition: left .5s;
+}
+#slider>ul>li {
+    width: 20%;
+    float: left;
+    position: relative;
+}
+#slider>ul>li p {
+    padding: 10px;
+}
+
+#slider>ul>li>img {
+    margin: auto;
+    width: 100%;
+}
+#slider-wrapper input[type=radio] {
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    z-index: 100;
+    visibility: hidden;
+}
+#slider-wrapper label {
+    position: absolute;
+    left: 50%;
+    bottom: -30px;
+    z-index: 100;
+    width: 15px;
+    height: 15px;
+    background: #222;
+    cursor: pointer;
+    -webkit-transition: background-color .5s;
+    -moz-transition: background-color .5s;
+    -o-transition: background-color .5s;
+    transition: background-color .5s;
+}
+
+#slider-wrapper #button-1:checked~label[for=button-1] { background: #888; }
+#slider-wrapper #button-2:checked~label[for=button-2] { background: #888; }
+#slider-wrapper #button-3:checked~label[for=button-3] { background: #888; }
+
+#slider-wrapper label[for=button-1] { margin-left: -40px }
+#slider-wrapper label[for=button-2] { margin-left: -20px }
+
+#slider-wrapper #button-1:checked~#slider>ul { left: 0 }
+#slider-wrapper #button-2:checked~#slider>ul { left: -100% }
+#slider-wrapper #button-3:checked~#slider>ul { left: -200% }
+
+.topnav {
+    background-color: #FFF8F0;
+    display: flex;
+    justify-content: right;
+    top: 10px;
+  }
+  
+  .topnav {
+    background-color: #8F95D3;
+    display: flex;
+    justify-content: right;
+    top: 10px;
+  }
+  
+  .topnav a {
+    float: left;
+    color: hsl(0, 0%, 95%);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #8F95D3;
+    color: #FFF8F0;
+  }
+  
+  .topnav a.active {
+    background-color: #8F95D3;
+    color: #8F95D3;
+  }
+  
+  .topnavUL {
+    display: flex;
+    flex-direction: row;
+  }
+  h3{
+    text-align: center;
+    color: #FFF8F0;
+  }
